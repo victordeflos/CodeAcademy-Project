@@ -4,7 +4,7 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Cry4Nature",
+  "name": "etichal-cities",
   "short_name": "Ethical Cities",
   "description": "React and Redux App",
   "icons": [

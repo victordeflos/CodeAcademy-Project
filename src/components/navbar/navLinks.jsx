@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {Link} from "react-router-dom"
 
 const NavLinksContainer = styled.div`
   height: 100%;
@@ -33,7 +34,7 @@ const LinkItem = styled.li`
   }
 `;
 
-const Link = styled.a`
+const LinkStyle = styled.div`
   text-decoration: none;
   color: white;
   font-size: inherit;
@@ -65,16 +66,24 @@ export function NavLinks(props) {
     <NavLinksContainer>
       <LinksWrapper>
         <LinkItem>
-          <LinkM href="#">Movie</LinkM>
+          <Link className='nav-link' to='/movies'>
+            Moive
+          </Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">AboutUs</Link>
+          <Link className='nav-link' to='/aboutus'>
+            AboutUs
+          </Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Services</Link>
+          <Link className='nav-link' to='/services'>
+            Services
+          </Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">FAQ</Link>
+          <Link className='nav-link' to='/faq'>
+            FAQ
+          </Link>
         </LinkItem>
       </LinksWrapper>
     </NavLinksContainer>
